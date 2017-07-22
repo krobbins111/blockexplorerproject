@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/blockexplorerproject.iml" filepath="$PROJECT_DIR$/.idea/blockexplorerproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blockexplorernode/blockexplorernode.iml" filepath="$PROJECT_DIR$/blockexplorernode/blockexplorernode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blockexplorerproject.iml" filepath="$PROJECT_DIR$/blockexplorerproject.iml" />
     </modules>
   </component>
 </project>
