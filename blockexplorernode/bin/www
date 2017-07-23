@@ -5,7 +5,6 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('blockexplorernode:server');
 var http = require('http');
 
 /**
@@ -20,10 +19,16 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+var io = require('socket.io')(server);
 
 /**
  * Listen on provided port, on all network interfaces.
  */
+
+io.on('connection', function (socket) {
+  var data = "me";
+    io.sockets.emit('stockData', data);
+});
 
 server.listen(port);
 server.on('error', onError);
@@ -86,5 +91,4 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
-  debug('Listening on ' + bind);
 }
