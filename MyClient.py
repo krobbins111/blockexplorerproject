@@ -5,7 +5,7 @@ def connect(server, port):
     print("connecting to: %s:%d" % (server, port))
 
     conn = http.client.HTTPConnection(server + ":" + str(port))
-    conn.request('POST', '/test', '{"data":1}')
+    conn.request('POST', '/test', "{'balls' : 2}")
     resp = conn.getresponse()
     #hskey = resp.read().split(':')[0]
 
