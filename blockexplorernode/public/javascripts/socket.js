@@ -17,10 +17,10 @@ function drawChart(dataPoints) {
     dataPoints = [
         [1,5,7,8],
         [2,6,7,9]
-    ]
+    ];
 
     var data = new google.visualization.DataTable();
-    data.addColumn('number', 'Day');
+    data.addColumn('number', 'Time');
     data.addColumn('number', 'DOW JONES Index');
     data.addColumn('number', 'S&P 500 Index');
     data.addColumn('number', 'Bitcoin');
